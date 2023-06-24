@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="home" class="header">
+      <div class="logo">
+        <h1>Library System</h1>
+      </div>
+      <nav class="nav-items">
+        <ul>
+          <li><a class="nav-href" href="#books">Books</a></li>
+          <li><a class="nav-href" href="#register">Register</a></li>
+          <li><a class="nav-href" href="#"> Contact Us </a></li>
+          <li><a class="nav-href" href="#"> Logout </a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="books" class="book">
+      <table class="table-books">
+        <caption>
+          Books
+        </caption>
+        <tr>
+          <th>Book ID</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Availability</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <table class="inner-table">
+              <tr>
+                <th><a class="inner-href" href="#">Book Title 1</a></th>
+              </tr>
+              <tr>
+                <td>Publication Date: 2000</td>
+              </tr>
+              <tr>
+                <td>Page Count: 250</td>
+              </tr>
+              <tr>
+                <td>ISBN: 123-4567890123</td>
+              </tr>
+            </table>
+          </td>
+          <td>Author Name 1</td>
+          <td>Genre 1</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <table class="inner-table">
+              <tr>
+                <th><a class="inner-href" href="#">Book Title 2</a></th>
+              </tr>
+              <tr>
+                <td>Publication Date: 2005</td>
+              </tr>
+              <tr>
+                <td>Page Count: 300</td>
+              </tr>
+              <tr>
+                <td>ISBN: 123-4567890456</td>
+              </tr>
+            </table>
+          </td>
+          <td>Author Name 2</td>
+          <td>Genre 2</td>
+          <td>Not Available</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>
+            <table class="inner-table">
+              <tr>
+                <th><a class="inner-href" href="#">Book Title 3</a></th>
+              </tr>
+              <tr>
+                <td>Publication Date: 2010</td>
+              </tr>
+              <tr>
+                <td>Page Count: 350</td>
+              </tr>
+              <tr>
+                <td>ISBN: 123-4567890789</td>
+              </tr>
+            </table>
+          </td>
+          <td>Author Name 3</td>
+          <td>Genre 3</td>
+          <td>Available</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="register">
+      <h2>Register</h2>
+      <form action="" method="post">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" required />
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" required />
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" name="date-of-birth" id="dob" required />
+        <label for="age">Age:</label>
+        <input type="number" name="Age" id="age" min="5" max="100" required />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name=""
+          id=""
+          required
+          placeholder="axy@gmail.com"
+        />
+        <label for="password">Password:</label>
+        <input type="password" name="Password" id="password" required />
+        <label for="confirm-password">Confirm password:</label>
+        <input
+          type="password"
+          name="Confirm-password"
+          id="confirm-password"
+          required
+        />
+        <button type="submit" class="register-button">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
